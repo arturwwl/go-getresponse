@@ -7,16 +7,19 @@ A golang API client for [GetResponse V3](https://apidocs.getresponse.com/v3)
 ## Usage
 
 ```sh
-go get github.com/healthimation/go-getresponse/getresponse
+go get github.com/arturwwl/go-getresponse/getresponse
 ```
 
-```golang
+```go
+package main
+
 import (
+	"context"
     "log"
     "time"
-    "context"
 
-    "github.com/healthimation/go-getresponse/getresponse"
+    "github.com/arturwwl/go-getresponse/getresponse"
+    "github.com/golang/protobuf/proto"
 )
 
 func main() {
@@ -24,7 +27,7 @@ func main() {
     client := getresponse.NewClient("my get response api key", timeout)
 
     campaignID := "123"
-    err := client.(context.Background(), "jsmith@example.com", "John Smith", nil, campaignID, nil, nil)
+    err := client.CreateContact(context.Background(), "jsmith@example.com", proto.String("John Smith"), nil, campaignID, nil, nil)
     if err != nil {
         log.Printf("Error creating contact in GR: %s", err.Error())
     }

@@ -24,7 +24,7 @@ func testClient(handler http.HandlerFunc, timeout time.Duration) (Client, *httpt
 		return *ret, err
 	}
 	c := &getResponseClient{
-		c:      client.NewBaseClient(finder, "gr", true, timeout),
+		c:      client.NewBaseClient(finder, "gr", true, timeout, nil),
 		apiKey: "",
 	}
 	return c, ts

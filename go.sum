@@ -1,0 +1,4 @@
+github.com/healthimation/go-client v0.0.0-20200428003822-f53fe7e43897 h1:TWM1LFbmZgbYkVzG48URGEEWVpJ7izdp61+VPT/ma14=
+github.com/healthimation/go-client v0.0.0-20200428003822-f53fe7e43897/go.mod h1:nme/pvloJGiqf7BzSx5lA4koYZ/+nKPKD5D/rnwpMAc=
+github.com/healthimation/go-glitch v0.0.0-20170714151522-c1136cd4a72e h1:3IQwx75cuKeS+gdHpg9DQv4b2mPnXudm7GimapVDcfw=
+github.com/healthimation/go-glitch v0.0.0-20170714151522-c1136cd4a72e/go.mod h1:L0AcpZdlZLboF9cDifCbjs19LyCotXLdKyFMyYjwDsA=
